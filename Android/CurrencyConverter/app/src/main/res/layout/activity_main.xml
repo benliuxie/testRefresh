@@ -10,22 +10,14 @@
         android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="20dp"
         android:ems="10"
+        app:layout_constraintHorizontal_weight="2"
         android:inputType="numberDecimal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintRight_toLeftOf="@+id/guideline"
         android:layout_marginRight="5dp" />
 
-
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="116dp" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -33,15 +25,15 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custom_spinner_background"
         android:gravity="center"
         android:spinnerMode="dropdown"
         android:textColor="#ff5733"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@+id/guideline"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
